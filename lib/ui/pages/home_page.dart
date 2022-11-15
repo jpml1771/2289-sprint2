@@ -9,46 +9,59 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Column(children: [
-      Stack(
-        children: [buildProfileImage(), customAppBar()],
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [
+            Color.fromARGB(255, 15, 95, 194),
+            Color.fromARGB(255, 108, 152, 205),
+            Color.fromARGB(255, 192, 195, 200),
+          ],
+        ),
       ),
-      const SizedBox(
-        height: 60,
-      ),
-      const Text("Brad Wilson",
+      child: SafeArea(
+          child: Column(children: [
+        Stack(
+          children: [buildProfileImage(), customAppBar()],
+        ),
+        const SizedBox(
+          height: 60,
+        ),
+        const Text("Brad Wilson",
+            style: TextStyle(
+                fontSize: 25.0,
+                color: Colors.white,
+                letterSpacing: 2.0,
+                fontWeight: FontWeight.w700)),
+        const SizedBox(
+          height: 10,
+        ),
+        const Text(
+          "Kilcoole, Waterford",
           style: TextStyle(
-              fontSize: 25.0,
-              color: Colors.blueGrey,
+              fontSize: 18.0,
+              color: Colors.black45,
               letterSpacing: 2.0,
-              fontWeight: FontWeight.w400)),
-      const SizedBox(
-        height: 20,
-      ),
-      const Text(
-        "Kilcoole, Waterford",
-        style: TextStyle(
-            fontSize: 18.0,
-            color: Colors.black45,
-            letterSpacing: 2.0,
-            fontWeight: FontWeight.w300),
-      ),
-      CartTotal()
-    ]));
+              fontWeight: FontWeight.w300),
+        ),
+        CartTotal()
+      ])),
+    );
   }
 
   Widget buildProfileImage() {
-    return Stack(
-      alignment: Alignment.bottomCenter,
-      children: const [
-        CustomBanner(200),
-        CircleAvatar(
-          backgroundImage:
-              NetworkImage("https://randomuser.me/api/portraits/men/75.jpg"),
-          radius: 60.0,
-        )
-      ],
+    return Center(
+      child: Padding(
+        padding: EdgeInsets.only(top: 60),
+        child: const
+            //CustomBanner(200),
+            CircleAvatar(
+          backgroundImage: NetworkImage("https://i.pravatar.cc/150"),
+          radius: 80,
+        ),
+      ),
     );
   }
 
@@ -57,7 +70,7 @@ class HomePage extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(15),
           child: GestureDetector(
             onTap: () => Get.to(() => ProductList(),
                 transition: Transition.circularReveal,
