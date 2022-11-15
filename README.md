@@ -1,4 +1,4 @@
-Proyecto base para el segundo reto
+Proyecto sprint segundo reto Grupo 7 - NRC 2289
 
 El código incluye comentarios que explican la estructura del proyecto y los puntos en los que se tiene que trabajar están marcados con un TODO.
 
