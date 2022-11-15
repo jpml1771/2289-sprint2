@@ -1,11 +1,9 @@
-Proyecto sprint segundo reto Grupo 7 - NRC 2289
+#Proyecto sprint segundo reto Grupo 7 - NRC 2289
 
-El código incluye comentarios que explican la estructura del proyecto y los puntos en los que se tiene que trabajar están marcados con un TODO.
-
-El siguiente es un demo de la interfaz a la que se debe llegar (funcionalidades adicionales o mejoras a la interfaz son permitidas):
+Entrega de app de shopping cart del grupo 7, a continuación gif. con solución del reto con algunes ajustes realizados.
 
 ![shoppingApp](https://user-images.githubusercontent.com/4458129/173839525-218900ed-9bcd-4f6f-9158-0b02dd9d7707.gif)
 
-Solución:
+##Repositorio:
 
-https://github.com/MisionTIC4b/f_shopping_app
+https://github.com/jpml1771/2289-sprint2
